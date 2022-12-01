@@ -1,0 +1,19 @@
+{
+  "name": "Extension Jaune x Rouge",
+  "version": "0.5",
+  "description": "Extension pour le stream de Crocodyle_lol",
+  "icons": {
+    "48": "badges-48.png"
+  },
+  "host_permissions": [
+    "https://www.crocolink.fr/username/*"
+  ],
+  "content_scripts": 
+  [
+    {
+    "js": ["content.js"],
+    "matches": ["https://www.twitch.tv/crocodyle_lol"],
+    "run_at":"document_end"
+  }],
+  "manifest_version": 3
+}
